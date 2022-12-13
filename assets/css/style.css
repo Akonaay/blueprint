@@ -11411,7 +11411,7 @@ header.nav-fixed {
 }
 
 .w3l-banner-slider-main .carousel-item {
-    background: url(../img/slider1.jpg) no-repeat;
+    background: url(../img/12.jpg) no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -11797,13 +11797,13 @@ header.nav-fixed {
     background-size: cover;
     /* linear-gradient(to right, rgba(238, 219, 219, 0.7), rgba(192, 153, 153, 0.445)), */
     background-image: linear-gradient(to right, rgba(63, 123, 141, 0.26), rgba(30, 138, 84, 0.685)),
-        url(../img/action-call-bg.jpg);
+        url(../img/kenworth.jpg);
     background-repeat: no-repeat,
         no-repeat,
         no-repeat;
     background-position: center;
     background-attachment: fixed;
-    min-height: 50vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -11916,13 +11916,13 @@ header.nav-fixed {
     background-size: cover;
     /* linear-gradient(to right, rgba(238, 219, 219, 0.7), rgba(192, 153, 153, 0.445)), */
     background-image: linear-gradient(to right, rgba(63, 123, 141, 0.26), rgba(30, 138, 84, 0.685)),
-    url(../img/action-call-bg.jpg);
+    url(../img/services.jpg);
     background-repeat: no-repeat,
     no-repeat,
     no-repeat;
     background-position: center;
     background-attachment: fixed;
-    min-height: 50vh;
+    min-height: 35vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -11934,13 +11934,13 @@ header.nav-fixed {
     background-size: cover;
     /* linear-gradient(to right, rgba(238, 219, 219, 0.7), rgba(192, 153, 153, 0.445)), */
     background-image: linear-gradient(to right, rgba(63, 123, 141, 0.26), rgba(30, 138, 84, 0.685)),
-        url(../img/action-call-bg.jpg);
+        url(../img/16.jpg);
     background-repeat: no-repeat,
         no-repeat,
         no-repeat;
     background-position: center;
     background-attachment: fixed;
-    min-height: 40vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -12676,10 +12676,10 @@ ul li a {
 }
 
 .box-wrapper{
-    padding: 40px 25px;
+    padding: 20px 30px;
   position: relative;
-  background: rgba(41, 161, 156, 0.1);
-  border: none;
+  /* background: purple; */
+ 
   transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -12689,13 +12689,14 @@ ul li a {
 }
 
 .box-wrapper:hover {
-  background: #1f242c;
+  /* background: #1f242c; */
+  /* border: 1px solid; */
   transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -ms-transition: .3s;
   -o-transition: .3s;
-  color: white;
+  /* color: white; */
 }
 
 .box-wrapper .icon-holder span.fa {
@@ -12707,13 +12708,16 @@ ul li a {
   border-radius: 100%;
   color: #fff;
   font-size: 26px;
+  background-color: #1f242c !important;
+}
+
+@media (max-width: 390px) {
+    .box-wrapper h3{
+    display: none;
+}
 }
 
 
-.box-wrapper h3{
-    margin-top: 5px;
-    font-size: 22px;
-}
 
 .services i{
     color: #040505;
@@ -12724,4 +12728,76 @@ ul li a {
 .service-item div i{
     color: #09294b;
     padding-bottom: 10px;
+}
+
+.service-item .card:hover{
+    background-color: var(--gray);
+    border: none !important;
+}
+
+
+
+/*  */
+
+#demo-1 {
+    background-size: cover;
+    /* linear-gradient(to right, rgba(238, 219, 219, 0.7), rgba(192, 153, 153, 0.445)), */
+    background-image: linear-gradient(to right, rgba(63, 123, 141, 0.26), rgba(30, 138, 84, 0.685)),
+    url(../img/banner2.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.demo-inner-content {
+    position: relative;
+    top: 5urem;
+}
+
+.banner-info {
+    max-width: 500px;
+}
+
+.banner-img {
+    max-width: 500px;
+}
+
+.demo-inner-content h3 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media (min-width: 299px) {
+    .demo-inner-content h3 {
+        font-size: 50px;
+    }
+}
+
+.banner-info .h3-p {
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.banner-info p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner-info a {
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #007bff;
 }
