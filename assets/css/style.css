@@ -11001,47 +11001,8 @@ body {
         serif;
 }
 
-/* Header  */
-
-header {
-    z-index: 9999;
-
-}
-
-.nav-link-menu {
-    font-size: large;
-    /* color: #000 !important; */
-}
-
-header.nav-fixed {
-    /* padding: 10px 15px; */
-    background-color: #09294a;
-}
-
-/* header.nav-fixed .navbar-brand img {
-    max-width: 102px;
-} */
-
-/* End Header  */
-
 /* Banner  */
 
-#demo-1 {
-    background-size: cover;
-    /* linear-gradient(to right, rgba(238, 219, 219, 0.7), rgba(192, 153, 153, 0.445)), */
-    background-image: linear-gradient(to right, rgba(63, 123, 141, 0.26), rgba(30, 138, 84, 0.685)),
-    url(../img/banner2.jpg);
-    background-repeat: no-repeat,
-    no-repeat,
-    no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding-top: 25px;
-}
 
 .banner-right img {
     border-radius: 75% 25% 32% 68% / 53% 47% 53% 47%;
@@ -12743,7 +12704,7 @@ ul li a {
     background-size: cover;
     /* linear-gradient(to right, rgba(238, 219, 219, 0.7), rgba(192, 153, 153, 0.445)), */
     background-image: linear-gradient(to right, rgba(63, 123, 141, 0.26), rgba(30, 138, 84, 0.685)),
-    url(../img/banner2.jpg);
+    url(../img/002.jpg);
     background-repeat: no-repeat,
     no-repeat,
     no-repeat;

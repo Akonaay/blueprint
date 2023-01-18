@@ -18,10 +18,10 @@ $(function() {
 
     var scroll = $(window).scrollTop();
 
-    if (scroll <= 90) {
-      $("header").addClass("bg-info");
+    if (scroll <= 96) {
+      $("header").addClass("bg-dark");
     } else {
-      $("header").removeClass("bg-info");
+      $("header").removeClass("bg-dark");
     }
   });
 
