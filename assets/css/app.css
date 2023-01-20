@@ -501,6 +501,7 @@ button.owl-next {
 .nav-fixed .navbar-expand-md .navbar-nav .nav-link {
   color: var(--dark) !important;
   opacity: 0.95;
+  font-size: 16px !important;
 }
 
 
@@ -787,11 +788,13 @@ button.owl-next {
 
 /* Service Page  */
 
-.item-wrap:hover{
-    background-color: rgba(226, 254, 255, 0.441);
-    padding: 10px;
-    border-radius: 5px;
-}
+/* .item-wrap div:hover{
+   transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0);
+   transform: scale(1);
+    transition: transform 0.3s linear;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0, rgba(0, 0, 0, 0.09) 11%, rgba(0, 0, 0, 0.12) 13%, rgba(0, 0, 0, 0.19) 20%, rgba(0, 0, 0, 0.29) 28%, rgba(0, 0, 0, 0.29) 29%, rgba(0, 0, 0, 0.42) 38%, rgba(0, 0, 0, 0.46) 43%, rgba(0, 0, 0, 0.53) 47%, rgba(0, 0, 0, 0.75) 69%, rgba(0, 0, 0, 0.87) 84%, rgba(0, 0, 0, 0.98) 99%, rgba(0, 0, 0, 0.94) 100%);
+ 
+} */
 
 .item-wrap a{
     background-color: aliceblue;
@@ -999,7 +1002,14 @@ color: var(--primary-color);
   font-size: 100px;
   line-height: 95px;
   letter-spacing: -1px;
-  line-height: 7rem;
+  line-height: 8rem !important;
+  /* font-family:sans-serif; */
+}
+
+.w3l-banner-content p {
+  color: #fff;
+  font-weight:400;
+  font-size: 24px;
 }
 
 @media (max-width: 1080px) {
@@ -1027,8 +1037,10 @@ color: var(--primary-color);
 
 @media (max-width:480px) {
   .w3l-banner-content h3 {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 50px;
+    line-height: 70px !important;
+    font-weight: bolder;
+    padding-top: 3rem;
   }
   
 }
@@ -1060,3 +1072,319 @@ h6.left-text-design:after {
     top: 5%;
   }
 }
+
+/* Services Page - Featured service section  */
+
+.locations-1 .box16,
+.w3services-3 .box16 {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0px;
+}
+
+.w3services-3 .box16 {
+    border-radius: 4px;
+}
+
+.box16:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s linear;
+}
+
+.locations-1 .box16 .box-content,
+.locations-1 .box16:after {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.locations-1 .box16:after {
+    content: "";
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.08) 69%, rgba(0, 0, 0, 0.76) 100%);
+    top: 0;
+    border-radius: 4px;
+    transition: all .5s ease 0s;
+}
+
+.locations-1 .box16 .post,
+.locations-1 .box16 .title {
+    transform: translateY(30px);
+    transition: all 0.4s cubic-bezier(0.13, 0.62, 0.81, 0.91) 0s;
+}
+
+.locations-1 .box16:hover:after {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0, rgba(0, 0, 0, 0.09) 11%, rgba(0, 0, 0, 0.12) 13%, rgba(0, 0, 0, 0.19) 20%, rgba(0, 0, 0, 0.29) 28%, rgba(0, 0, 0, 0.29) 29%, rgba(0, 0, 0, 0.42) 38%, rgba(0, 0, 0, 0.46) 43%, rgba(0, 0, 0, 0.53) 47%, rgba(0, 0, 0, 0.75) 69%, rgba(0, 0, 0, 0.87) 84%, rgba(0, 0, 0, 0.98) 99%, rgba(0, 0, 0, 0.94) 100%);
+}
+
+.locations-1 .box16 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s linear;
+}
+
+.locations-1 .box16 .box-content {
+    padding: 25px;
+    margin-bottom: 30px;
+    bottom: 0;
+    z-index: 1;
+    text-align: left;
+}
+
+.locations-1 .box16 .title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.locations-1 .box16 .post {
+    display: block;
+    padding: 0px 0;
+    font-size: 15px;
+    color: #eee;
+}
+
+.locations-1 .box16 .social li a,
+.locations-1 .box17 .icon li a {
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.locations-1 .box16:hover .post,
+.locations-1 .box16:hover .title {
+    transform: translateY(0);
+}
+
+.locations-1 .box16 .social {
+    list-style: none;
+    padding: 0 0 5px;
+    margin: 40px 0 25px;
+    opacity: 0;
+    position: relative;
+    transform: perspective(500px) rotateX(-90deg) rotateY(0) rotateZ(0);
+    transition: all 0.6s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+
+.locations-1 .box16:hover .social {
+    opacity: 1;
+    transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0);
+}
+
+.locations-1 .box16 .social:before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: -23px;
+    left: 0;
+    right: 0;
+}
+
+.locations-1 .box16 .social li {
+    display: inline-block;
+}
+
+.locations-1 .box16 .social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #6d3795;
+    margin-right: 10px;
+    transition: all .3s ease 0s;
+}
+
+.locations-1 .box17 .icon li,
+.locations-1 .box17 .icon li a {
+    display: inline-block;
+}
+
+.locations-1 .box16 .social li a:hover {
+    background: #bea041;
+}
+
+.locations-1 .box16 .social li:last-child a {
+    margin-right: 0;
+}
+
+.locations-1 .box16 img {
+    border-radius: 4px 4px 0 0px;
+}
+
+.w3services-3 .box16 img {
+    border-radius: 4px;
+}
+
+.locations-1 .box-content i {
+    color: #fff;
+    font-size: 46px;
+}
+
+.w3property-grid {
+    background-color: var(--bg-grey);
+    border-radius: var(--border-radius);
+}
+
+.w3property-grid .list-information.space-between {
+    padding: 1.2em 1em;
+}
+
+@media only screen and (max-width:1180px) {
+
+    .w3property-grid .product-features li:nth-child(3) {
+        margin-top: 6px;
+
+    }
+
+    .locations-1 .box16 .box-content {
+        padding: 15px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .locations-1 .box16 .title {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .popular .row {
+        padding: 0 10px;
+    }
+
+    .popular .col-6 {
+        padding: 0 8px;
+    }
+
+    .locations-1 .box16 .title {
+        font-size: 18px;
+    }
+
+    .locations-1 .box16 .box-content {
+        padding: 15px;
+    }
+}
+
+
+/* Services Page - Featured service section  */
+
+
+/*--/w3l-newsletter--*/
+.uphny-w3l-newsletter-inf {
+    background: url(../img/bn.jpg) no-repeat center;
+    -ms-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    align-items: center;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    box-shadow: 0 20px 100px 0 rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    padding: 5em 4em;
+}
+
+.uphny-w3l-newsletter-inf:before {
+    content: "";
+    /* background: papayawhip; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.uphny-w3l-newsletter .titlehny {
+    font-size: 32px;
+    line-height: 42px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.w3l-newsletter-left {
+    text-align: left;
+}
+
+.subscribe-wthree-field {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 16px;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+form.subscribe-wthree input {
+    font-size: 18px;
+    color: rgb(250, 246, 246);
+    border-radius: 7px;
+    padding: 0px 15px;
+    background: rgb(232, 236, 232);
+    height: 55px;
+    border: 1px solid #fff;
+}
+
+form.subscribe-wthree input:focus {
+    background: #fff;
+    border: 1px solid #fff;
+    box-shadow: none;
+}
+
+@media (max-width: 992px) {
+    section.w3l-newsletter {
+        margin-bottom: 0;
+        padding-bottom: 4em;
+    }
+
+    .uphny-w3l-newsletter-inf {
+        padding: 4em 2em;
+    }
+
+    .uphny-w3l-newsletter .titlehny {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width:640px) {
+    .uphny-w3l-newsletter .titlehny {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .uphny-w3l-newsletter-inf {
+        padding: 3em 2em;
+    }
+
+    .w3l-footer-29-main h2 a.navbar-brand {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width:600px) {
+    .subscribe-wthree-field {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    section.w3l-newsletter {
+        margin-bottom: 0;
+        padding-bottom: 3em;
+    }
+}
+
+/*--//w3l-newsletter--*/
